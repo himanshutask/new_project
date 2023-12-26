@@ -25,7 +25,7 @@ stages{
            parallel {
                stage  ("Deploy to Staging") {
                    steps {
-                      sh "scp -v -o StrictHostChecking=no **/*.war root@${params.testjn}:/opt/testjnwebapps/"
+                      sh "scp -v -o StrictHostChecking=no **/*.war root@${params.testjn}:/opt/testjn/webapps/"
                       }
                    }
                }
